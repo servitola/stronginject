@@ -1,3 +1,20 @@
+IT'S A FORK WHICH I NEEDED SINCE I GOT PROBLEMS. The original project is not supported for a long time.
+
+I HAD >6000 dependecies and the result file was 40mb. It leaded to problems on generation on Rider IDE on .net8 (.net7 was OK)
+
+- I moved to .net8 and last nuget packages
+- I removed all spaces in generated file
+- I removed all try/catches there in generated file
+- I removed newline symbols partly in generated file
+- I removed all the comments around the code
+- I removed some classes outside the main project since I was trying to understand how it works
+- I removed formatting rules
+
+- I can use it now by referencing it as as 2 projects: StringInject and StrongInject.SourceGenerator. 1 with needed classes and the 2nd one is connected as source generator
+
+If someone has problems → the solution is reduce the file size.
+
+
 ![](https://github.com/yairhalberstadt/stronginject/workflows/.NET%20Core/badge.svg)
 [![Join the chat at https://gitter.im/stronginject/community](https://badges.gitter.im/stronginject/community.svg)](https://gitter.im/stronginject/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![NuGet (with prereleases)](https://img.shields.io/nuget/vpre/StrongInject)](https://www.nuget.org/packages/StrongInject)
