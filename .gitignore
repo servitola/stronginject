@@ -367,3 +367,4 @@ FodyWeavers.xsd
 #Intellij
 .idea/*
 .DS_Store
+.DS_Store

@@ -1,0 +1,25 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>12</LangVersion>
+    <WarningsAsErrors>CS8785, CS0108, CS0114, CS0162, CS0109, CS0219, CS0169, CS0628, CS8600, CS8602, CA2215,
+      CS8603, CS8604, CS8618, CS8625, CS8609, CS8613, NU1605, CS8714, CS8620, CS8612, CS8597, CS8614, CS8601,
+      CS8610, CS8619, CS8622, CS8629, CS8631,CS8766, CS8767, CS8765, CS8605, IDISP010, IDISP011, IDISP017,
+      IDISP024, IDISP023, IDISP022, IDISP020, IDISP019, IDISP014, IDISP013, SYSLIB0011
+    </WarningsAsErrors>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>false</ImplicitUsings>
+    <NoWarn>IDISP012</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)/IsExternalInit.cs" Visible="false" />
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;LOCAL;$(DefineConstants)</DefineConstants>
+  </PropertyGroup>
+
+</Project>

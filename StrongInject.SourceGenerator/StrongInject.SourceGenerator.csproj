@@ -7,6 +7,7 @@
         <IsRoslynComponent>true</IsRoslynComponent>
         <NoWarn>$(NoWarn), RS1024</NoWarn>
         <RootNamespace>StrongInject.Generator</RootNamespace>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
